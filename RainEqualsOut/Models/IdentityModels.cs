@@ -29,5 +29,6 @@ namespace RainEqualsOut.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

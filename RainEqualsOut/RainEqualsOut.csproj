@@ -201,7 +201,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709281936031_Added Customer Model.cs" />
+    <Compile Include="Migrations\201709281936031_Added Customer Model.Designer.cs">
+      <DependentUpon>201709281936031_Added Customer Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709281956246_Test.cs" />
+    <Compile Include="Migrations\201709281956246_Test.Designer.cs">
+      <DependentUpon>201709281956246_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -280,6 +290,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709281936031_Added Customer Model.resx">
+      <DependentUpon>201709281936031_Added Customer Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709281956246_Test.resx">
+      <DependentUpon>201709281956246_Test.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
