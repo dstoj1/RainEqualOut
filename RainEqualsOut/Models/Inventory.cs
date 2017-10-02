@@ -22,6 +22,7 @@ namespace RainEqualsOut.Models
         public string Color { get; set; }
 
         [Display(Name = "Cost")]
-        public string Cost { get; set; }        
+        public string Cost { get; set; }
+        public ApplicationUser User { get; set; }
     }
 }

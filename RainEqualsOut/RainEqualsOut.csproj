@@ -197,6 +197,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -224,6 +225,10 @@
     <Compile Include="Migrations\201710021922361_Updated IdentityModels.cs" />
     <Compile Include="Migrations\201710021922361_Updated IdentityModels.Designer.cs">
       <DependentUpon>201710021922361_Updated IdentityModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710021930479_Added User to the Inventory.cs" />
+    <Compile Include="Migrations\201710021930479_Added User to the Inventory.Designer.cs">
+      <DependentUpon>201710021930479_Added User to the Inventory.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -299,6 +304,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
+    <Folder Include="Views\Inventory\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -326,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710021922361_Updated IdentityModels.resx">
       <DependentUpon>201710021922361_Updated IdentityModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710021930479_Added User to the Inventory.resx">
+      <DependentUpon>201710021930479_Added User to the Inventory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
