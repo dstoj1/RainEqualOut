@@ -142,6 +142,7 @@ namespace RainEqualsOut.Controllers
         public ActionResult Register()
         {
             ViewBag.Name = new SelectList(context.Roles.ToList(), "Name", "Name");
+
             return View();
         }
 
@@ -168,6 +169,8 @@ namespace RainEqualsOut.Controllers
 
                     return RedirectToAction("Index", "Home");
                 }
+                ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Admin")).ToList(), "Name", "Name");
+
                 AddErrors(result);
             }
 

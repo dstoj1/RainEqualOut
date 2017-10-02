@@ -83,3 +83,5 @@ C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEquals
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.csproj.GenerateResource.Cache
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.Test.resources
 C:\Users\Ljiljana\documents\visual studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.csprojResolveAssemblyReference.cache
+C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.AddedUserRole.resources
+C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.CreatedIventoryModel.resources
