@@ -31,5 +31,6 @@ namespace RainEqualsOut.Models
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Inventory> Inventories { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
     }
 }
