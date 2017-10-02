@@ -217,6 +217,14 @@
     <Compile Include="Migrations\201710021908493_Created Iventory Model.Designer.cs">
       <DependentUpon>201710021908493_Created Iventory Model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710021919512_Updated IdentityModels with Db.cs" />
+    <Compile Include="Migrations\201710021919512_Updated IdentityModels with Db.Designer.cs">
+      <DependentUpon>201710021919512_Updated IdentityModels with Db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710021922361_Updated IdentityModels.cs" />
+    <Compile Include="Migrations\201710021922361_Updated IdentityModels.Designer.cs">
+      <DependentUpon>201710021922361_Updated IdentityModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -312,6 +320,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710021908493_Created Iventory Model.resx">
       <DependentUpon>201710021908493_Created Iventory Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710021919512_Updated IdentityModels with Db.resx">
+      <DependentUpon>201710021919512_Updated IdentityModels with Db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710021922361_Updated IdentityModels.resx">
+      <DependentUpon>201710021922361_Updated IdentityModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
