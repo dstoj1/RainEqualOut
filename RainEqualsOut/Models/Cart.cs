@@ -19,6 +19,9 @@ namespace RainEqualsOut.Models
         public Inventory Inventory { get; set; }
         public int InventoryId { get; set; }
         public IEnumerable<Inventory> NameOfInventory { get; set; }
+        //public Customer Customer { get; set; }
+        //public CustomerId { get; set; }
+        //public IEnumerable<Vendor> NameOfCustomer { get; set; }
 
         public ApplicationUser User { get; set; }
     }
