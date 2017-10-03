@@ -17,7 +17,7 @@ namespace RainEqualsOut.Models
         public string LastName { get; set; }
 
         [Display(Name = "Phone")]
-        public string Phone { get; set; }
+        public int Phone { get; set; }
 
         [Display(Name = "Email")]
         public string Email { get; set; }

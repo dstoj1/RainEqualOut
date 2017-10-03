@@ -11,11 +11,11 @@ namespace RainEqualsOut.Models
         public int Id { get; set; }
 
         [Display(Name = "Customer")]
-        public string User_Id { get; set; }
+        public int User_Id { get; set; }
         [Display(Name = "Item")]
         public string Item { get; set; }
         [Display(Name = "Quantity")]
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
         public Inventory Inventory { get; set; }
         public int InventoryId { get; set; }
         public IEnumerable<Inventory> NameOfInventory { get; set; }

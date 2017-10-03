@@ -11,11 +11,11 @@ namespace RainEqualsOut.Models
         public int Id { get; set; }
 
         [Display(Name = "Order Id")]
-        public string OrderId { get; set; }
+        public int OrderId { get; set; }
         [Display(Name = "Item")]
         public string Item { get; set; }
         [Display(Name = "Total Of Each Item")]
-        public string TotalOfEachItem { get; set; }
+        public int TotalOfEachItem { get; set; }
 
         public ApplicationUser User { get; set; }
     }

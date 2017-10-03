@@ -11,9 +11,9 @@ namespace RainEqualsOut.Models
         public int ID { get; set; }
 
         [Display(Name = "Invetory Id")]
-        public string Iventory_Id { get; set; }
+        public int Iventory_Id { get; set; }
         [Display(Name = "Total of Each ")]
-        public string TotalOfEach { get; set; }
+        public int TotalOfEach { get; set; }
 
         public ApplicationUser User { get; set; }
         public Inventory Inventory { get; set; }
