@@ -89,3 +89,4 @@ C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEquals
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.UpdatedIdentityModels.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.AddedUsertotheInventory.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.CreatedaStockModelandUpdatedIdentityModelswithDbSetStock.resources
+C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.DeletedInventoryModelAddedInventoryModelagain.resources

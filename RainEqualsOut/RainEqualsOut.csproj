@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -233,6 +234,10 @@
     <Compile Include="Migrations\201710022002135_Created a StockModel and Updated IdentityModels with DbSet Stock.cs" />
     <Compile Include="Migrations\201710022002135_Created a StockModel and Updated IdentityModels with DbSet Stock.Designer.cs">
       <DependentUpon>201710022002135_Created a StockModel and Updated IdentityModels with DbSet Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710030023305_Deleted Inventory.Model,  Added Inventory.Model again.cs" />
+    <Compile Include="Migrations\201710030023305_Deleted Inventory.Model,  Added Inventory.Model again.Designer.cs">
+      <DependentUpon>201710030023305_Deleted Inventory.Model,  Added Inventory.Model again.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -343,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710022002135_Created a StockModel and Updated IdentityModels with DbSet Stock.resx">
       <DependentUpon>201710022002135_Created a StockModel and Updated IdentityModels with DbSet Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710030023305_Deleted Inventory.Model,  Added Inventory.Model again.resx">
+      <DependentUpon>201710030023305_Deleted Inventory.Model,  Added Inventory.Model again.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
