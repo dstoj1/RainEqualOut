@@ -16,13 +16,14 @@ namespace RainEqualsOut.Models
         public string LastName { get; set; }
         [Display(Name = "Items Purchased")]
         public string ItemsPurchased { get; set; }
-
         [Display(Name = "User Id")]
         public string User_Id { get; set; }
         [Display(Name = "'Status")]
         public string  StatusOfDelivery{ get; set; }
         [Display(Name = "Date")]
         public string DateOfPurchase { get; set; }
+        [Display(Name = "Total Amount")]
+        public string TotalAmount { get; set; }
         [Display(Name = "Payment")]
         public string Pament{ get; set; }
         [Display(Name = "Ship To Address")]
