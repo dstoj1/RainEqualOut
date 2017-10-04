@@ -346,12 +346,15 @@
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Home\Return.cshtml" />
     <Content Include="Views\Home\Terms.cshtml" />
+    <Content Include="Views\Message\Generate.cshtml" />
+    <Content Include="Views\Message\Success.cshtml" />
+    <Content Include="Views\Shared\_CustomerLayout.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Inventory\" />
-    <Folder Include="Views\Message\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

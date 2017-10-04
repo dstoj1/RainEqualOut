@@ -70,6 +70,31 @@ namespace RainEqualsOut.Controllers
 
             return View(inventory);
         }
+        [HttpGet]
+        public ActionResult Generate ()
+        {
+            Message message = new Message();
+            return View(message);
+        }
+
+        [HttpPost]
+        public ActionResult Generate(Message message)
+        {
+            string UserName = User.Identity.GetUserName();
+            var user = from x in context.Users where x.UserName == UserName select x;
+            var CurrentUser = user.First();
+            message.User = CurrentUser;
+            if (ModelState.IsValid)
+            {
+                context.Messages.Add(message);
+                context.SaveChanges();
+                return RedirectToAction("Success");
+            }
+            else
+            {
+                return RedirectToAction("Fail");
+            }
+        }
     }
 }
     
