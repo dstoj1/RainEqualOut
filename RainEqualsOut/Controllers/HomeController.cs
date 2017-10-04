@@ -21,16 +21,28 @@ namespace RainEqualsOut.Controllers
             return View();
         }
 
-        public ActionResult OurStory()
+        public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "A Little Background How Rain=Out Got Started.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "";
+
+            return View();
+        }
+        public ActionResult Return()
+        {
+            ViewBag.Message =  "Rain=Out Return Policy.";
+
+            return View();
+        }
+        public ActionResult Terms()
+        {
+            ViewBag.Message = "Rain=Out Terms and Conditions.";
 
             return View();
         }

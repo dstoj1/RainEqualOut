@@ -3,29 +3,25 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Rain=Out</h1>
+    <p class="lead">Protecting important items from Mother Nature is difficult. We have our jacket, boots, and gloves. What about those items we can't or don't protect like your sports equipment, electronics, and outdoor gear? Well, now you can! Our company logo and name say's it all. Rain=Out (Patent Pending) is made from waterproof, tear resistant material that protects those important items from Mother Nature but more importantly still allowing you accessibility to those items whenever you need them. </p>
+    @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <h3>Terms and Conditions</h3>
+        <p></p>
+        <button class="btn btn-default">@Html.ActionLink("Terms", "Terms", "Home", new { style = "color: black" })</button>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h3>Return Policy</h3>
+        <p></p>
+        <button class="btn btn-default">@Html.ActionLink("Returns", "Return", "Home", new { style = "color: black" })</button>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h3>Contact Us</h3>
+        <p></p>
+        <button class="btn btn-default">@Html.ActionLink("Contact Us", "Contact", "Home", new { style = "color: black"})</button>
     </div>
 </div>
