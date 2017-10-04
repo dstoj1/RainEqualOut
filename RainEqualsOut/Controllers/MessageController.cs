@@ -28,14 +28,14 @@ namespace RainEqualsOut.Controllers
         }
 
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Generate()
         {
             Message message = new Message();
             return View(message);
         }
 
         [HttpPost]
-        public ActionResult Create(Message message)
+        public ActionResult Generate(Message message)
         {
             string UserName = User.Identity.GetUserName();
             var user = from x in context.Users where x.UserName == UserName select x;
