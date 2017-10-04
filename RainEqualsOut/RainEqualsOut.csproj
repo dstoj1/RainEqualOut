@@ -256,6 +256,10 @@
     </Compile>
     <Compile Include="Migrations\201710040147514_Update Database\.cs" />
     <Compile Include="Migrations\201710040147514_Update Database\.Designer.cs" />
+    <Compile Include="Migrations\201710041341144_Created Message.Model.cs" />
+    <Compile Include="Migrations\201710041341144_Created Message.Model.Designer.cs">
+      <DependentUpon>201710041341144_Created Message.Model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -263,6 +267,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Message.cs" />
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\Stock.cs" />
@@ -388,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710040147514_Update Database\.resx">
       <DependentUpon>.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710041341144_Created Message.Model.resx">
+      <DependentUpon>201710041341144_Created Message.Model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
