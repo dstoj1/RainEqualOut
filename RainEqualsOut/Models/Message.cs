@@ -15,7 +15,6 @@ namespace RainEqualsOut.Models
             public string Msg { get; set; }
 
             public ApplicationUser User { get; set; }
-        //    public Vendor Vendor { get; set; }
-        //}
     }
+
 }
