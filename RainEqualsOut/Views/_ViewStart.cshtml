@@ -1,3 +1,17 @@
 ﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    string chooseLayout = "";
+
+    if (this.User.IsInRole("Customer"))
+    {
+        chooseLayout = "~/Views/Shared/_CustomerLayout.cshtml";
+    }
+    else if (this.User.IsInRole("Admin"))
+    {
+        chooseLayout = "~/Views/Shared/_VendorLayout.cshtml";
+    }
+    else
+    {
+        chooseLayout = "~/Views/Shared/_Layout.cshtml";
+    }
+    Layout = chooseLayout;
 }
