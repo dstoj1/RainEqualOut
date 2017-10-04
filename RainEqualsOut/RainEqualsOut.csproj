@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -259,6 +260,10 @@
     <Compile Include="Migrations\201710041341144_Created Message.Model.cs" />
     <Compile Include="Migrations\201710041341144_Created Message.Model.Designer.cs">
       <DependentUpon>201710041341144_Created Message.Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710041431047_Updated IndentityModel.cs" />
+    <Compile Include="Migrations\201710041431047_Updated IndentityModel.Designer.cs">
+      <DependentUpon>201710041431047_Updated IndentityModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -342,6 +347,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Inventory\" />
+    <Folder Include="Views\Message\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -396,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710041341144_Created Message.Model.resx">
       <DependentUpon>201710041341144_Created Message.Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710041431047_Updated IndentityModel.resx">
+      <DependentUpon>201710041431047_Updated IndentityModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

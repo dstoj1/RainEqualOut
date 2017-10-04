@@ -35,5 +35,6 @@ namespace RainEqualsOut.Models
         public DbSet<Cart> Carts { get; set; }
         public DbSet<OrderDetails> OrderDetail { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Message> Messages { get; set; }
     }
 }

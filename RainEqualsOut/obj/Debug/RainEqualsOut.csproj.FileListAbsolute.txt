@@ -96,3 +96,4 @@ C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEquals
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.UpdateDatabase.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.csprojResolveAssemblyReference.cache
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.CreatedMessageModel.resources
+C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.UpdatedIndentityModel.resources
