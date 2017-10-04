@@ -18,7 +18,7 @@ namespace RainEqualsOut.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(context.Messages.ToList());
         }
 
         public ActionResult About()
@@ -46,5 +46,6 @@ namespace RainEqualsOut.Controllers
 
             return View();
         }
+       
     }
 }
