@@ -15,19 +15,16 @@ namespace RainEqualsOut.Controllers
             context = new ApplicationDbContext();
 
         }
-
         public ActionResult Index()
         {
             return View(context.Messages.ToList());
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "A Little Background How Rain=Out Got Started.";
 
             return View();
         }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "";
@@ -46,6 +43,10 @@ namespace RainEqualsOut.Controllers
 
             return View();
         }
-       
+        public ActionResult DisplayTweets()
+        {
+            return View();
+        }
+
     }
 }
