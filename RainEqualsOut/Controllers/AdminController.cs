@@ -2,6 +2,7 @@
 using RainEqualsOut.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -45,15 +46,16 @@ namespace RainEqualsOut.Controllers
             newInventory.User = CurrentUser;
             context.Inventories.Add(newInventory);
             context.SaveChanges();
-            return RedirectToAction("Details", "Inventory");
+            return RedirectToAction("Details");
         }
-        public ActionResult RemoveVendor(int InventoryId)
+        public ActionResult RemoveProduct(int InventoryId)
         {
             var Vendor = from x in context.Inventories where x.ID == InventoryId select x;
             context.Inventories.Remove(Vendor.First());
             context.SaveChanges();
-            return RedirectToAction("Details", "Inventory");
+            return RedirectToAction("Details", "Admin");
         }
+        [HttpGet]
         public ActionResult Edit(int? InventoryId)
         {
             if (InventoryId == null)
@@ -68,6 +70,18 @@ namespace RainEqualsOut.Controllers
             //ViewBag.PickUpDayID = new SelectList(context.PickUpDay, "Id", "DayOfWeek", customer.PickUpDayID);
             //ViewBag.PickUpFrequencyID = new SelectList(context.PickUpFrequency, "Id", "Frequency", customer.PickUpFrequencyID);
 
+            return View(inventory);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "ID,Company,FirstName,LastName,Phone,Email,TypeOfFood,CostPerHour,CostPerPerson,TurnOnOff")] Inventory inventory)
+        {
+            if (ModelState.IsValid)
+            {
+                context.Entry(inventory).State = EntityState.Modified;
+                context.SaveChanges();
+                return RedirectToAction("Details");
+            }
             return View(inventory);
         }
     }
