@@ -9,6 +9,8 @@ namespace RainEqualsOut.Models
     public class Inventory
     {
         public int ID { get; set; }
+        [Display(Name = "Photo")]
+        public string Photo { get; set; }
         [Display(Name = "Product")]
         public string Product { get; set; }
         [Display(Name = "Description")]

@@ -269,6 +269,10 @@
     <Compile Include="Migrations\201710041508511_Updated MessageModel.Designer.cs">
       <DependentUpon>201710041508511_Updated MessageModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710051529596_Edited Inventory.cs" />
+    <Compile Include="Migrations\201710051529596_Edited Inventory.Designer.cs">
+      <DependentUpon>201710051529596_Edited Inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -351,10 +355,12 @@
     <Content Include="Views\Shared\_CustomerLayout.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Home\DisplayTweets.cshtml" />
+    <Content Include="Views\Admin\Details.cshtml" />
+    <Content Include="Views\Admin\Create.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Admin\" />
     <Folder Include="Views\Inventory\" />
   </ItemGroup>
   <ItemGroup>
@@ -416,6 +422,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710041508511_Updated MessageModel.resx">
       <DependentUpon>201710041508511_Updated MessageModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710051529596_Edited Inventory.resx">
+      <DependentUpon>201710051529596_Edited Inventory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
