@@ -23,8 +23,6 @@ namespace RainEqualsOut.Models
         public string Type { get; set; }
         [Display(Name = "Price")]
         public int Price { get; set; }
-       
-
         public ApplicationUser User { get; set; }
 
     }

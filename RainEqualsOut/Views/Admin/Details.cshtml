@@ -17,9 +17,9 @@
                 {
                 <tr>
                     <td>
-                        @inventory.Photo<br />  @inventory.Product<br />  @inventory.Description<br />  @inventory.Size<br /> @inventory.Color<br /> @inventory.Type<br /> $@inventory.Price <br />
-                        @Html.ActionLink("Remove Product", "RemoveProduct", "Admin", new { InventoryId = inventory.ID }, null)<br />
-                        @Html.ActionLink("Edit Product Info", "Edit", "Admin", new { InventoryId = inventory.ID }, null)
+                       <img src="@inventory.Photo" /><br />  @inventory.Product<br />  @inventory.Description<br />  @inventory.Size<br /> @inventory.Color<br /> @inventory.Type<br /> $@inventory.Price <br />
+                        @Html.ActionLink("Remove Product", "RemoveProduct", "Admin", new { id = inventory.ID }, null)<br />
+                        @Html.ActionLink("Edit Product Info", "Edit", "Admin", new { id = inventory.ID }, null)
                     </td>
                 </tr>
             }

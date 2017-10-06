@@ -3,6 +3,7 @@ using RainEqualsOut.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -38,33 +39,46 @@ namespace RainEqualsOut.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Create(Inventory newInventory)
+        public ActionResult Create(InventoryForm Form)
         {
+            Inventory newInventory = new Inventory();
             string UserName = User.Identity.GetUserName();
             var user = from x in context.Users where x.UserName == UserName select x;
             var CurrentUser = user.First();
+            string filename = Path.GetFileName(Form.Image.FileName);
+            newInventory.Photo = $"../Images/{filename}";
+            filename = Path.Combine(Server.MapPath("~/Images/"), filename);
+            Form.Image.SaveAs(filename);
             newInventory.User = CurrentUser;
+            newInventory.Product = Form.Product;
+            newInventory.Description = Form.Description;
+            newInventory.Size = Form.Size;
+            newInventory.Color = Form.Color;
+            newInventory.Type = Form.Type;
+            newInventory.Price = Form.Price;
             context.Inventories.Add(newInventory);
             context.SaveChanges();
             return RedirectToAction("Details");
         }
-        public ActionResult RemoveProduct(int InventoryId)
+        public ActionResult RemoveProduct(int? id)
         {
-            var Vendor = from x in context.Inventories where x.ID == InventoryId select x;
+            var Vendor = from x in context.Inventories where x.ID == (int)id select x;
             context.Inventories.Remove(Vendor.First());
             context.SaveChanges();
             return RedirectToAction("Details", "Admin");
         }
         [HttpGet]
-        public ActionResult Edit(int? InventoryId)
+        public ActionResult Edit(int? id)
         {
-            if (InventoryId == null)
+            if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Inventory inventory = context.Inventories.Find(InventoryId);
+            InventoryForm inventory = new InventoryForm();
+            inventory.ID = (int)id;
             if (inventory == null)
             {
+                
                 return HttpNotFound();
             }
             //ViewBag.PickUpDayID = new SelectList(context.PickUpDay, "Id", "DayOfWeek", customer.PickUpDayID);
@@ -74,7 +88,7 @@ namespace RainEqualsOut.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Company,FirstName,LastName,Phone,Email,TypeOfFood,CostPerHour,CostPerPerson,TurnOnOff")] Inventory inventory)
+        public ActionResult Edit([Bind(Include = "ID,Company,FirstName,LastName,Phone,Email,TypeOfFood,CostPerHour,CostPerPerson,TurnOnOff")] InventoryForm inventory)
         {
             if (ModelState.IsValid)
             {
