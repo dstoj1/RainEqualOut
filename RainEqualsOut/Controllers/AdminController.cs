@@ -88,7 +88,7 @@ namespace RainEqualsOut.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Company,FirstName,LastName,Phone,Email,TypeOfFood,CostPerHour,CostPerPerson,TurnOnOff")] InventoryForm inventory)
+        public ActionResult Edit([Bind(Include = "Product,Description,Size,Color,Type,Price")] InventoryForm inventory)
         {
             if (ModelState.IsValid)
             {
