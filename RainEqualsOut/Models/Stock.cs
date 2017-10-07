@@ -10,15 +10,11 @@ namespace RainEqualsOut.Models
     {
         public int ID { get; set; }
 
-        [Display(Name = "Invetory Id")]
-        public int Iventory_Id { get; set; }
         [Display(Name = "Total of Each ")]
         public int TotalOfEach { get; set; }
 
-        public ApplicationUser User { get; set; }
         public Inventory Inventory { get; set; }
-        public int InventoryId { get; set; }
-        public IEnumerable<Inventory> NameOfInventory { get; set; }
+        //public IEnumerable<Inventory> NameOfInventory { get; set; }
 
     }
 }
