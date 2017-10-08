@@ -25,6 +25,7 @@ namespace RainEqualsOut.Models
         public int Price { get; set; }
         [Display(Name ="Count Of Item")]
         public int amount { get; set;}
+        public bool IsActive { get; set; }
         public ApplicationUser User { get; set; }
 
     }

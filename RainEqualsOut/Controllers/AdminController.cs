@@ -28,8 +28,15 @@ namespace RainEqualsOut.Controllers
             string UserName = User.Identity.GetUserName();
             var user = from x in context.Users where x.UserName == UserName select x;
             var CurrentUser = user.First();
-            var inventory = from x in context.Inventories where x.User.Id == CurrentUser.Id select x;
-            List<Inventory> model = inventory.ToList();
+            var items = (from x in context.Inventories where x.User.Id == CurrentUser.Id select x).ToList();
+            List<Inventory> model = new List<Inventory>();
+            foreach(var item in items)
+            {
+                if (item.IsActive)
+                {
+                    model.Add(item);
+                }
+            }
 
             return View(model);
         }
@@ -56,6 +63,7 @@ namespace RainEqualsOut.Controllers
             newInventory.Color = Form.Color;
             newInventory.Type = Form.Type;
             newInventory.Price = Form.Price;
+            newInventory.IsActive = true;
             context.Inventories.Add(newInventory);
             Stock newStock = new Stock();
             newStock.Inventory = newInventory;
@@ -66,10 +74,10 @@ namespace RainEqualsOut.Controllers
         }
         public ActionResult RemoveProduct(int? id)
         {
-            var Vendor = from x in context.Inventories where x.ID == (int)id select x;
-            context.Inventories.Remove(Vendor.First());
+            var inventory = from x in context.Inventories where x.ID == (int)id select x;
+            inventory.First().IsActive = false;
             context.SaveChanges();
-            return RedirectToAction("Details", "Admin");
+            return RedirectToAction("Details");
         }
         [HttpGet]
         public ActionResult Edit(int? id)

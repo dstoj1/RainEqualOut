@@ -289,6 +289,10 @@
     <Compile Include="Migrations\201710062057479_added count to inventory.Designer.cs">
       <DependentUpon>201710062057479_added count to inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710082203210_Added Bool IsActive to InventoryModel.cs" />
+    <Compile Include="Migrations\201710082203210_Added Bool IsActive to InventoryModel.Designer.cs">
+      <DependentUpon>201710082203210_Added Bool IsActive to InventoryModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -461,6 +465,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710062057479_added count to inventory.resx">
       <DependentUpon>201710062057479_added count to inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710082203210_Added Bool IsActive to InventoryModel.resx">
+      <DependentUpon>201710082203210_Added Bool IsActive to InventoryModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
