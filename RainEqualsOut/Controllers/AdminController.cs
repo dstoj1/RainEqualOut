@@ -65,10 +65,6 @@ namespace RainEqualsOut.Controllers
             newInventory.Price = Form.Price;
             newInventory.IsActive = true;
             context.Inventories.Add(newInventory);
-            Stock newStock = new Stock();
-            newStock.Inventory = newInventory;
-            newStock.TotalOfEach = 0;
-            context.Stocks.Add(newStock);
             context.SaveChanges();
             return RedirectToAction("Details");
         }
@@ -110,20 +106,28 @@ namespace RainEqualsOut.Controllers
             }
             return View(inventory);
         }
+        [HttpGet]
+        public ActionResult AddToStock()
+        {
+            StockViewData model = new StockViewData();
+            var ViewAmountInStock = context.Inventories.ToList();
+            model.InventoryList = ViewAmountInStock;
+            return View("Stock", model);
+        }
         [HttpPost]
         public ActionResult AddToStock(StockViewData Form)
         {
             var AddingStock = context.Inventories.Where(x => x.ID == Form.InventoryId).First();
             AddingStock.amount += Form.Quantity;            
             context.SaveChanges();
-            return View();
+            return RedirectToAction("ViewStock");
         }
         public ActionResult ViewStock()
         {
             StockViewData model = new StockViewData();
             var ViewAmountInStock = context.Inventories.ToList();
             model.InventoryList = ViewAmountInStock;
-            return View("Stock", model);
+            return View(model.InventoryList);
         }
     }
 }

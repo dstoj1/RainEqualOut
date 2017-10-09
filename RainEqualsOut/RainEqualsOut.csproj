@@ -294,6 +294,10 @@
     <Compile Include="Migrations\201710082203210_Added Bool IsActive to InventoryModel.Designer.cs">
       <DependentUpon>201710082203210_Added Bool IsActive to InventoryModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710090136242_Removed Stock Model.cs" />
+    <Compile Include="Migrations\201710090136242_Removed Stock Model.Designer.cs">
+      <DependentUpon>201710090136242_Removed Stock Model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -305,7 +309,6 @@
     <Compile Include="Models\Message.cs" />
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\OrderItem.cs" />
-    <Compile Include="Models\Stock.cs" />
     <Compile Include="Models\StockViewData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -469,6 +472,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710082203210_Added Bool IsActive to InventoryModel.resx">
       <DependentUpon>201710082203210_Added Bool IsActive to InventoryModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710090136242_Removed Stock Model.resx">
+      <DependentUpon>201710090136242_Removed Stock Model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

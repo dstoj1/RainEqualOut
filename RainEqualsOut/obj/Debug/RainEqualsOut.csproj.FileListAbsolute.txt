@@ -99,8 +99,8 @@ C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEquals
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.UpdatedMessageModel.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.EditedInventory.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.CreatedInventoryFormModel.resources
-C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.csprojResolveAssemblyReference.cache
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.AddedStockViewDataModel.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.didstuffagain.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.addedcounttoinventory.resources
 C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.AddedBoolIsActivetoInventoryModel.resources
+C:\Users\Ljiljana\Documents\Visual Studio 2015\Projects\RainEqualsOut\RainEqualsOut\obj\Debug\RainEqualsOut.Migrations.RemovedStockModel.resources
