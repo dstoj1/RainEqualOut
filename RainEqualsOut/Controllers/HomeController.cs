@@ -47,6 +47,9 @@ namespace RainEqualsOut.Controllers
         {
             return View();
         }
-
+        public ActionResult ShopProducts()
+        {
+            return View();
+        }
     }
 }

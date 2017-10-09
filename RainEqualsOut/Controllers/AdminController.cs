@@ -111,10 +111,10 @@ namespace RainEqualsOut.Controllers
             return View(inventory);
         }
         [HttpPost]
-        public ActionResult AddToStock(int InventoryId)
+        public ActionResult AddToStock(StockViewData Form)
         {
-            var AddingStock = context.Inventories.Where(x => x.ID == InventoryId).First();
-            AddingStock.amount++;            
+            var AddingStock = context.Inventories.Where(x => x.ID == Form.InventoryId).First();
+            AddingStock.amount += Form.Quantity;            
             context.SaveChanges();
             return View();
         }

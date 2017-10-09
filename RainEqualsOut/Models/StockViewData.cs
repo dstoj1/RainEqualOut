@@ -9,5 +9,6 @@ namespace RainEqualsOut.Models
     {
         public List<Inventory> InventoryList { get; set; }
         public int InventoryId { get; set; }
+        public int Quantity { get; set; }
     }
 }
